@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body{
+    background-color:antiquewhite;
+  }
+  form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: azure;
+     border-radius: 10px;
+    padding: 20px;
+  }
+</style>
+<body>
+  <form>
+    <h1>Login Form</h1>
+    <label> User : </label><br>
+    <input type="text"><br><br>
+    <label>Password: </label><br>
+    <input type="password"  id="myInput"><br><br>
+    Show Password   <input type="checkbox" onclick="showPassword()"><br><br>
+    <button>Login</button>
+  </form>
+
+  <script>
+    function showPassword() {
+      var pass = document.getElementById("myInput");
+      if (pass.type === "password") {
+        pass.type = "text";
+      } else {
+        pass.type = "password";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
